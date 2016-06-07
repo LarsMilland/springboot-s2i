@@ -84,7 +84,7 @@ if [ -f "$LOCAL_SOURCE_DIR/pom.xml" ]; then
   copy_artifacts target
 
   # clean up after maven
-  mvn clean
+  mvn clean $PROXYMVN
   if [ -d "$HOME/.m2/repository" ]; then
     rm -r "$HOME/.m2/repository"
   fi
