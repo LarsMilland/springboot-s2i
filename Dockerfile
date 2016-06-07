@@ -4,7 +4,7 @@ MAINTAINER Jorge Morales <jmorales@redhat.com>
 
 
 # disable IPv6 on local yum configuration
-echo "ip_resolve=4">> /etc/yum.conf
+RUN echo "ip_resolve=4">> /etc/yum.conf
 
 # Install build tools on top of base image
 # Java jdk 8, Maven 3.3, Gradle 2.6
